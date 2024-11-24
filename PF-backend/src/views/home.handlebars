@@ -1,0 +1,29 @@
+<div class="container-titles">
+    <h1 class="ecommerce-title">Todos los productos</h1>
+</div>
+
+<div class="container-products">
+    {{#each products}}
+        <div class="products">
+            <div>
+                {{products.thumbnail}}
+            </div>
+            <ul>
+                <li>title: {{this.title}}</li>
+                <li>price: {{this.price}} {{#if esCostoso}}(El producto es costoso){{/if}} </li>
+                <li>currency: {{this.currency}}</li>
+                <li>category: {{this.category}}</li>
+                <li>description: {{this.description}}</li>
+                <li>stock: {{this.stock}}</li>
+                <li>code: {{this.code}}</li>
+                <li>status: {{this.status}}</li>
+            </ul>
+        </div>
+    {{/each}}
+</div>
+<div class="container-btn">
+    <button id="bnt-actualizar-productos">Actualizar</button>
+</div>
+
+<script src="/api/public/js/products.js"></script>
+

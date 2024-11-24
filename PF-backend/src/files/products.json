@@ -9,6 +9,18 @@
 		"code": "12345",
 		"status": "true",
 		"category": "men",
+		"thumbnail": "/api/public/images/clock.webp"
+	},
+	{
+		"id": 2,
+		"title": "Jean-men",
+		"price": 2870,
+		"currency": "USD",
+		"description": "New",
+		"stock": "available",
+		"code": "1256",
+		"status": "true",
+		"category": "men",
 		"thumbnail": ""
 	},
 	{

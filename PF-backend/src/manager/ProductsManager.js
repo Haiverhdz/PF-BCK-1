@@ -10,7 +10,7 @@ export default class ProductManager {
     constructor() {
         this.#jsonFilename = "products.json";
     };
-
+  
     async #findOneById(id) {
         this.#products = await this.getAll();
         const productFound = this.#products.find((item) => item.id === Number(id));
